@@ -73,4 +73,10 @@ body {
 	padding: 20px 25px;
 	border-radius: 20px;
 	margin-top: 20px;
+	
  }
+
+ .form__container {
+	width: 550px;
+ }
+ 
