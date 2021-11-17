@@ -80,3 +80,30 @@ body {
 	width: 550px;
  }
  
+ .form{
+	background-color: #1D263A;
+	color: #fff;
+	padding: 115px 0px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+ .form h1 {
+	 font-size: 48px;
+ }
+
+ .form p {
+	 font-size: 18px;
+	 opacity: 0.65;
+ }
+
+ .form__group {
+	 display: flex;
+	 flex-direction: column;
+
+ }
+
+ .form__group label {
+	text-align: left;
+ }
