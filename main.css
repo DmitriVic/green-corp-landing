@@ -106,4 +106,10 @@ body {
 
  .form__group label {
 	text-align: left;
+	
+ }
+ .test {
+	 justify-content: center;
+	 align-self: start;
+	 height: ;
  }
