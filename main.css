@@ -72,7 +72,11 @@ body {
 	background-position: center;
 	background-size: cover;
  }
-
+ @media (max-width: 720px){
+	.about {
+	  padding: 50px 10px;
+}
+}
  
 	@media (max-width: 320px){
 		.about {
@@ -80,6 +84,7 @@ body {
 		  padding: 50px 10px;
 	}
 }
+
 
 @media (max-width: 320px){
 	.about__info  {
@@ -92,7 +97,7 @@ body {
 	
 	
  }
- @media (max-width: 320px){
+ @media (max-width: 720px){
 	.about__image{
 		width: 280px;
   }
@@ -106,7 +111,7 @@ body {
  }
 
 
-@media (max-width: 320px){
+@media (max-width: 720px){
   .about__sun—image{
 	width: 75px;
 	height: 75px;
@@ -127,7 +132,7 @@ body {
 	font-size: 70px;
 	line-height: 76px;
  }
- @media (max-width: 320px){
+ @media (max-width: 720px){
 	 .about h1{
 	font-size: 36px;
 	line-height: 40px;
@@ -174,6 +179,13 @@ body {
  .form h1 {
 	 font-size: 48px;
  }
+
+ @media (max-width: 720px){
+	.form h1 {
+	  font-size: 36px;
+	  line-height: 40px;
+}
+}
 
  .form p {
 	 font-size: 18px;
