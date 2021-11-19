@@ -2,8 +2,12 @@ body {
 	font-family: 'Raleway', sans-serif;
 	color: #213053;
 	margin: 0;
+	
+	
  }
-  
+
+
+
  header {
 	display: flex;
 	justify-content: space-between;
@@ -12,7 +16,10 @@ body {
    top: 0;
    background: white;
 	z-index: 1;
+	
  }
+
+
   
  .header__logo {
 	height: 30px;
@@ -51,9 +58,25 @@ body {
 	background-size: cover;
  }
 
+ 
+	@media (max-width: 320px){
+		.about {
+		  flex-direction: column;
+		  padding: 0 10px;
+	}
+	
+ }
+
  .about__image {
 	width: 500px;
+	width: 100%;
+	
  }
+ @media (max-width: 320px){
+	.about__image{
+		width: 280px;
+  }
+}
   
  .about__sun—image {
 	width: 100px;
@@ -61,6 +84,14 @@ body {
 	animation: rotation 10s infinite linear;
 	position: absolute;
  }
+
+
+@media (max-width: 320px){
+  .about__sun—image{
+	width: 75px;
+	height: 75px;
+ }
+}
 
  @keyframes rotation {
    0% {
@@ -76,6 +107,13 @@ body {
 	font-size: 70px;
 	line-height: 76px;
  }
+ @media (max-width: 320px){
+	 .about h1{
+	font-size: 36px;
+	line-height: 40px;
+	}
+}
+
   
  .about p {
 	font-size: 18px;
@@ -105,6 +143,14 @@ body {
 	justify-content: center;
 	align-items: center;
  }
+ @media (max-width: 320px){
+	.form {
+	  padding: 0 10px;
+}
+
+}
+
+
  .form h1 {
 	 font-size: 48px;
  }
@@ -179,6 +225,14 @@ body {
 	 display: flex;
 	 justify-content: center;
  }
+ @media (max-width: 320px){
+	.footer__container {
+	  flex-direction: column;
+	  padding: 0 10px;
+}
+}
+
+
  .footer__copyright {
 	margin-top: 40px;
 	text-align: center;
