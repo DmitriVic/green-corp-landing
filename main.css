@@ -16,6 +16,7 @@ body {
    top: 0;
    background: white;
 	z-index: 1;
+	padding: 10px 0;
 	
  }
 
@@ -24,6 +25,12 @@ body {
  .header__logo {
 	height: 30px;
  }
+
+ @media (max-width: 320px){
+	.header__logo {
+	  height: 20px;
+	}
+}
 
  a {
 	text-decoration: none;
@@ -62,14 +69,19 @@ body {
 	@media (max-width: 320px){
 		.about {
 		  flex-direction: column;
-		  padding: 0 10px;
+		  padding: 50px 10px;
 	}
-	
- }
+}
+
+@media (max-width: 320px){
+	.about__info  {
+	  order: 2;
+}
+}
 
  .about__image {
 	width: 500px;
-	width: 100%;
+	
 	
  }
  @media (max-width: 320px){
@@ -145,7 +157,7 @@ body {
  }
  @media (max-width: 320px){
 	.form {
-	  padding: 0 10px;
+	  padding: 50px 10px;
 }
 
 }
@@ -221,6 +233,13 @@ body {
  footer {
 	 padding: 90px 20px;
  }
+
+ @media (max-width: 320px){
+	footer {
+	  padding: 50px 10px;
+}
+
+}
  .footer__container {
 	 display: flex;
 	 justify-content: center;
