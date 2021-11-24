@@ -93,10 +93,16 @@ body {
 }
 
  .about__image {
-	width: 500px;
-	
+	max-width: 500px;
 	
  }
+
+ @media (max-width: 1000px){
+	.about__image{
+		width: 380px;
+  }
+}
+
  @media (max-width: 720px){
 	.about__image{
 		width: 280px;
