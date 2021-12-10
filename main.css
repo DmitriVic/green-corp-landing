@@ -113,16 +113,8 @@ body {
 	width: 100px;
 	height: 100px;
 	animation: rotation 10s infinite linear;
-	position: absolute;
+	/* position: absolute; */
  }
-
-
-@media (max-width: 720px){
-  .about__sun—image{
-	width: 75px;
-	height: 75px;
- }
-}
 
  @keyframes rotation {
    0% {
@@ -133,6 +125,16 @@ body {
        transform: rotate(360deg);
    }
 }
+
+
+@media (max-width: 720px){
+  .about__sun—image{
+	width: 75px;
+	height: 75px;
+ }
+}
+
+
 
  .about h1 {
 	font-size: 70px;
@@ -159,6 +161,67 @@ body {
 	border-radius: 20px;
 	margin-top: 20px;
 	
+ }
+ /* //======================================================================================================================================================== */
+ 
+ .features {
+	background-color: #fff;
+	padding: 115px 60px; 
+ }
+ 
+ @media (max-width: 720px) {
+	.features {
+	  padding: 50px 10px;
+	}
+ }
+
+ .cards {
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+ }
+ 
+ .card {
+	padding: 35px 40px 25px 40px;
+	background: #FFFFFF;
+	border: 1px solid #D9E4E6;
+	border-radius: 5px;
+ }
+ 
+ .card p {
+	opacity: 0.8;
+	font-size: 16px;
+	line-height: 22px;
+ }
+ 
+ .card__logo {
+	font-weight: 700;
+	font-size: 32px;
+	background: #eaeff9;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+ 
+ .card__logo.yellow {
+	color: #ffb406;
+ }
+ 
+ .card__logo.red {
+	color: #ad1714;
+ }
+ 
+ .card__logo.green {
+	color: #22a030;
+ }
+ 
+ @media (max-width: 720px) {
+	.cards {
+	  grid-template-columns: auto;
+	}
  }
 
  .form__container {
