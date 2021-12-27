@@ -113,6 +113,7 @@ body {
 	background: url('img/back.png') no-repeat;
 	background-position: center;
 	background-size: cover;
+	position: relative;
  }
  @media (max-width: 720px){
 	.about {
@@ -133,6 +134,14 @@ body {
 	  order: 2;
 }
 }
+
+.orb-canvas {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+
 
  .about__image {
 	max-width: 500px;
@@ -206,6 +215,8 @@ body {
  }
  /* //======================================================================================================================================================== */
  
+
+
 
 
 
@@ -384,6 +395,10 @@ body {
 	flex-shrink: 0;
 	background-size: cover;
 	background-position: center;
+
+	/* width: 50%;
+	flex-shrink: 0;
+	background: url("img/promo.jpg") 50% / cover ; */
  }
  
  .promo__right {
