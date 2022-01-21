@@ -41,23 +41,6 @@ function increaseNumberAnimationStep (i, element, endNumber) {
 	}
  });
 
-//  const formContainer = document.createElement('div');
-//  formContainer.classList.add('form__group');
-//  formContainer.classList.add('form__other-input');
-
-//  const input = document.createElement('input');
-//  formContainer.appendChild(input);
-
-
-
-
-
-
-
-
-
-
-
 
  function updateScroll() {
 	let header = document.querySelector('header')
@@ -76,6 +59,18 @@ function increaseNumberAnimationStep (i, element, endNumber) {
  window.addEventListener("scroll", updateScroll);
 
 
-//let f = document.querySelector("#form")
+ function addSmoothScroll(anchor) {
+	anchor.addEventListener('click', function (e) {
+	  e.preventDefault();
+  
+	  document.querySelector(this.getAttribute('href')).scrollIntoView({
+		 behavior: 'smooth'
+	  });
+	});
+ }
+  
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	addSmoothScroll(anchor);
+ });
 
-//document.querySelector('#form form').insertBefore(formContainer, document.querySelector('.form__submit'));
+	addSmoothScroll(document.querySelector('.more-button'));
